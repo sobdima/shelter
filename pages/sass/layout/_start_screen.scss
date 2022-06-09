@@ -1,0 +1,104 @@
+.start_screen_container {
+    background: $color-background-start-screen;
+    height: 908px;
+}
+
+.start_screen_content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.content {
+    padding-top: 163px;
+}
+
+.heading {
+    width: 310px;
+    margin-bottom: 42px;
+    @include start_heading;
+}
+
+.subheading {
+    width: 460px;
+    margin-bottom: 42px;
+    @include navigation__link;
+}
+
+.start-screen-puppy-tablet, .start-screen-puppy-mobile {
+    display: none;
+}
+
+@include media-tablet {
+    .start_screen_content {
+        flex-wrap: wrap;
+    }
+    .start-screen-puppy {
+        display: none;
+    }
+    .start-screen-puppy-tablet {
+        display: block;
+        //border: 1px solid rgb(231, 235, 34);
+        margin-left: 139px;
+        padding-top: 100px;
+    }
+    .start_screen_container {
+        height: 1166px;
+    }
+    .start_screen_content {
+        padding-top: 0px;
+        //border: 1px solid red;
+    }
+    .content {
+        padding-top: 60px;
+        margin: 0 auto;
+        //border: 1px solid rgb(9, 111, 245);
+    }
+    .button_primary__container {
+        width: 207px;
+        margin: 0 auto;
+    }
+}
+
+@include media-mobile {
+    .start_screen_container {
+        height: 823px;
+    }
+    .start_screen_content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading {
+        width: 230px;
+        //margin: 0 auto;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 0px;
+        //border: 1px solid rgb(9, 111, 245);
+    }
+    .subheading {
+        width: 300px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .start-screen-puppy, .start-screen-puppy-tablet {
+        display: none;
+    }
+    .start-screen-puppy-mobile {
+        width: 260px;
+        display: block;
+        //margin-left: 40px;
+        //margin-top: 105px;
+        margin: 105px 0 0 40px;
+    }
+    .content {
+        //border: 1px solid rgb(56, 245, 9);
+        height: 296px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0px;
+        margin-top: 60px;
+    }
+}

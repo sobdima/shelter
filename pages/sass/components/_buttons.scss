@@ -1,0 +1,109 @@
+.button_primary {
+    width: 207px;
+    height: 52px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    border: none;
+}
+
+.button_primary:hover {
+    background: #F6F6F6;
+}
+
+.button_primary__link {
+    @include button_primary__link;
+}
+
+.arrow, .arrow_mobile {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background: transparent;
+}
+
+.arrow:hover {
+    background: #FDDCC4;
+    cursor: pointer;
+}
+
+.card_button {
+    width: 187px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background: transparent;
+    margin-bottom: 30px;
+}
+
+.card_button:hover {
+    cursor: pointer;
+}
+
+.pets_button {
+    width: 261px;
+    height: 52px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    border: none;
+    display: block;
+    margin: 60px auto;
+}
+
+.pets_button:hover {
+    background: #FDDCC4;
+    cursor: pointer;
+}
+
+.donation_button {
+    width: 349px;
+    height: 43px;
+    background: #F1CDB3;
+    border-radius: 9px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    .card_number {
+        @include pet_name;
+        margin-left: 15px;
+    }
+}
+
+.donation_button:hover {
+    background: #FDDCC4;
+    cursor: pointer;
+}
+
+.button_circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    border: 2px solid #F1CDB3;
+    background: none;
+}
+
+.button_circle:hover {
+    cursor: pointer;
+}
+
+.button_disabled {
+    border: 2px solid #CDCDCD;
+}
+
+.button_color {
+    background: #F1CDB3;
+    border: 2px solid #F1CDB3;
+
+    align-items: center;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}

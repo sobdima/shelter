@@ -1,0 +1,139 @@
+.pets {
+    background: #F6F6F6;
+    height: 877px
+}
+
+.pets_heading {
+    @include heading;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    padding-top: 80px;
+    white-space: pre-line;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.card {
+    background: #FAFAFA;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        margin-bottom: 30px;
+    }
+}
+
+.card:hover {
+    cursor: pointer;
+    background: #FFFFFF;
+
+    button {
+        background: #FDDCC4;
+        border-color: #FDDCC4;
+    }
+}
+
+.cards {
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pet_name {
+    @include pet_name;
+    margin-bottom: 30px;
+}
+
+
+.layout-4-column {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    padding-top: 60px;
+
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+.pets_high {
+    height: 1462px;
+    padding-top: 120px;
+}
+
+.pets_arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.arrow_mobile {
+    display: none;
+}
+
+.arrow_mobile_buttons {
+    display: none;
+}
+
+@include media-tablet {
+    .cards {
+        width: 580px;
+    }
+    .card_tablet {
+        display: none;
+    }
+    .arrow_mobile {
+        display: none;
+    }
+    .arrow_mobile_buttons {
+        display: none;
+    }
+}
+
+@include media-mobile {
+    .pets {
+        height: 791px;
+    }
+    .pets_heading {
+        font-size: 25px;
+        width: 300px;
+        padding-top: 42px;
+    }
+    .slider {
+        width: 270px;
+        height: 507px;
+        margin: 42px auto;
+    }
+    .arrow {
+        display: none;
+    }
+    .cards {
+        width: 270px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .card_mobile {
+        display: none;
+    }
+    .arrow_mobile_buttons {
+        margin: 20px auto 0px;
+        width: 184px;
+        display: flex;
+        justify-content: space-between;
+        .arrow_mobile {
+            display: inline;
+        }
+    }
+    .pets_button {
+        margin: 42px auto;
+    }
+}

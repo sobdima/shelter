@@ -1,0 +1,73 @@
+.footer {
+    background: $color-background-footer;
+    height: 350px;
+}
+
+.footer_content {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts, .locations {
+    margin-top: 16px;
+}
+
+.footer__title {
+    @include footer_title;
+    width: 280px;
+    margin-bottom: 34px;
+}
+
+.footer__title_down {
+    margin-bottom: 40px; 
+}
+
+.mail, .phone, .boston, .london {
+    display: flex;
+    align-items: center;
+}
+
+.mail {
+    margin-bottom: 40px;
+}
+
+.boston {
+    margin-bottom: 32px;
+}
+
+.email, .phone_number, .boston_loc, .london_loc {
+    @include footer_text;
+    margin-left: 20px;
+}
+
+.boston_loc, .london_loc {
+    width: 260px;
+}
+
+@include media-tablet {
+    .footer {
+        width: 768px;
+        height: 640px;
+    }
+    .footer_content {
+        //border: 1px solid red;
+        padding-top: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contacts, .locations {
+        margin-top: 30px;
+        margin-bottom: 65px;
+        //border: 1px solid rgb(166, 218, 26);
+    }
+    .contacts {
+        margin-right: 60px;
+    }
+}
+
+@include media-mobile {
+    .footer {
+        display: none;
+    }
+}

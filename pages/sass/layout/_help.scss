@@ -1,0 +1,72 @@
+.help {
+    height: 611px;
+}
+
+.help_heading {
+    @include heading;
+    width: 310px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 60px;
+    padding-top: 80px;
+}
+
+.icon_text {
+    @include pet_name;
+}
+
+.list {
+    width: 1050px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list__item_margin {
+    margin-right: 120px;
+}
+
+.list__item_down {
+    margin-top: 55px;
+}
+
+.icon_text {
+    margin-top: 30px;
+}
+
+@include media-tablet {
+    .help {
+        height: 779px;
+    }
+    .list {
+        width: 632px;
+        margin: 0 auto;
+    }
+    .list__item {
+        width: 170px;
+        margin-bottom: 55px;
+    }
+    .list__item_margin {
+        margin-right: 0px;
+    }
+    .list__item_down {
+        margin-top: 0px;
+    }
+    .list__item_tablet {
+        margin-right: 60px;
+    }
+}
+
+@include media-mobile {
+    .help {
+        display: none;
+    }
+}

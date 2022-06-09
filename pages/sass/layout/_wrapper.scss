@@ -1,0 +1,28 @@
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header_pets_wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@include media-tablet {
+    .wrapper {
+        width: 708px;
+        margin: 0 auto;
+        //border: 1px solid red;
+    }
+}
+
+@include media-mobile {
+    .wrapper {
+        width: 300px;
+        margin: 0 auto;
+        //border: 1px solid red;
+    }
+}

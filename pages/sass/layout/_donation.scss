@@ -1,0 +1,74 @@
+.donation {
+    height: 462px;
+    background: #F6F6F6;
+    padding-top: 80px;
+}
+
+.donation_main {
+    width: 915px;
+    height: 282px;
+    margin: auto;
+    display: flex;
+}
+
+.donation_content {
+    margin-left: 30px;
+}
+
+.donation_heading {
+    @include heading;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.donation_subheading {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+
+    margin-bottom: 20px;
+}
+
+.donation_info {
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #B2B2B2;
+
+    width: 380px;
+}
+
+@include media-tablet {
+    .donation {
+        padding-top: 0px;
+        height: 783px;
+    }
+    .donation_main {
+        width: 505px;
+        height: 683px;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .donation_content {
+        margin-left: 0px;
+        width: 380px;
+        margin: 0 auto;
+    }
+    .donation_heading {
+        padding-top: 80px;
+    }
+}
+
+@include media-mobile {
+    .donation {
+        display: none;
+    }
+}

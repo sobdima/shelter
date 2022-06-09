@@ -1,0 +1,79 @@
+.about {
+    height: 588px;
+}
+
+.about_content {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 850px;
+    margin: auto;
+}
+
+.about_pets_mobile {
+    display: none;
+}
+
+.about_text {
+    margin-left: 120px;
+}
+
+.about_subheading {
+    margin-top: 25px;
+    @include about_the_shelter_text;
+}
+
+.about_heading {
+    width: 370px;
+    @include heading;
+}
+
+@include media-tablet {
+    .about {
+        height: 1048px;
+    }
+    .about_pets_mobile {
+        display: none;
+    }
+    .about_content {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        width: 430px;
+    }
+    .about_text {
+        margin-left: 0px;
+        margin-bottom: 80px;
+    }
+}
+
+@include media-mobile {
+    .about {
+        height: 974px;
+    }
+    .about_pets {
+        display: none;
+    }
+    .about_content {
+        width: 270px;
+        padding: 0px;
+    }
+    .about_pets_mobile {
+        display: block;  
+        margin-top: 42px;
+    }
+    .about_text {
+        margin: 0 auto;
+        width: 270px;
+    }
+    .about_heading {
+        padding-top: 42px;
+        width: 270px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .about_subheading {
+        font-size: 15px;
+        text-align: justify;
+    }
+}

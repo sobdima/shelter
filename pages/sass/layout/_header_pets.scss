@@ -1,0 +1,16 @@
+.header_pets {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background: #FFFFFF;
+}
+
+.logo_title_pets, .navigation__link_pets {
+    color: #545454;
+}
+
+.subtitle_pets, .navigation__link_active_pets {
+    color: #292929;
+}
