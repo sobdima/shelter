@@ -1,0 +1,18 @@
+@include media-mobile {
+    .pets_high {
+        height: 1653px;
+        padding-top: 0px;
+    }
+    .layout-4-column_mobile {
+        width: 400px;
+    }
+    .card__pets_mobile {
+        display: none;
+    }
+    .card {
+        margin: auto;
+    }
+    .pets_arrows {
+        padding-top: 12px;
+    }
+}

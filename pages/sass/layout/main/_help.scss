@@ -67,6 +67,34 @@
 
 @include media-mobile {
     .help {
-        display: none;
+        height: 890px;
+    }
+    .help_heading {
+        font-size: 30px;
+        width: 310px;
+        margin-bottom: 42px;
+        padding-top: 42px;
+    }
+    .list {
+        width: 370px;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .list__item {
+        margin-bottom: 30px;
+    }
+    .list__item:nth-child(odd) {
+        margin-right: 30px;
+    }
+    .list__item_margin {
+        margin-right: 0px;
+    }
+    .list__item_down {
+        margin-top: 0px;
+    }
+    .icon_text {
+        margin-top: 20px;
+        font-size: 15px;
     }
 }

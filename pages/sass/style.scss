@@ -7,12 +7,13 @@
 @import 'components/buttons';
 
 @import 'layout/wrapper';
-@import 'layout/start_screen';
-@import 'layout/header_main';
-@import 'layout/about';
-@import 'layout/pets';
-@import 'layout/help';
-@import 'layout/donation';
-@import 'layout/footer';
+@import 'layout/main/start_screen';
+@import 'layout/main/header_main';
+@import 'layout/main/about';
+@import 'layout/main/pets';
+@import 'layout/main/help';
+@import 'layout/main/donation';
+@import 'layout/main/footer';
 
-@import 'layout/header_pets';
+@import 'layout/pets/header_pets';
+@import 'layout/pets/pets_high';

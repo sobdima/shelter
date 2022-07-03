@@ -15,14 +15,20 @@
     .wrapper {
         width: 708px;
         margin: 0 auto;
-        //border: 1px solid red;
     }
 }
 
 @include media-mobile {
     .wrapper {
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+/*
+@include media-mobile-s {
+    .wrapper {
         width: 300px;
         margin: 0 auto;
         //border: 1px solid red;
     }
-}
+}*/

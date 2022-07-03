@@ -45,13 +45,16 @@
     width: 260px;
 }
 
+.footer_puppy_mobile {
+    display: none;
+}
+
 @include media-tablet {
     .footer {
         width: 768px;
         height: 640px;
     }
     .footer_content {
-        //border: 1px solid red;
         padding-top: 0px;
         flex-wrap: wrap;
         justify-content: center;
@@ -59,15 +62,41 @@
     .contacts, .locations {
         margin-top: 30px;
         margin-bottom: 65px;
-        //border: 1px solid rgb(166, 218, 26);
     }
     .contacts {
         margin-right: 60px;
+    }
+    .footer_puppy_mobile {
+        display: none;
     }
 }
 
 @include media-mobile {
     .footer {
+        width: 100%;
+        height: 864px;
+    }
+    .contacts, .locations {
+        margin: 0 0 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__title {
+        width: 350px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .footer__title_down {
+        padding-top: 30px;
+    }
+    .boston {
+        margin-bottom: 40px;
+    }
+    .footer_puppy {
         display: none;
+    }
+    .footer_puppy_mobile {
+        display: block;
     }
 }

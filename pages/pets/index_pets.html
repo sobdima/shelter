@@ -9,28 +9,37 @@
         <link rel="stylesheet" href="../sass/style.css">
     </head>
     <body>
-                <header class="header_pets">
-                    <div class="header_pets_wrapper">
-                    <div class="logo">
-                        <a href="../main/index.html" class="logo_title logo_title_pets">Cozy House</a>
-                        <p class="subtitle subtitle_pets">Shelter for pets in Boston</p>
-                    </div>
-                    <nav>
-                        <ul class="navigation">
-                            <li><a href="../main/index.html" class="navigation__link navigation__link_pets">About the shelter</a></li>
-                            <li id="select"><a href="#" class="navigation__link navigation__link_pets navigation__link_active_pets">Our pets</a></li>
-                            <li><a href="../main/index.html#help_anchor" class="navigation__link navigation__link_pets">Help the shelter</a></li>
-                            <li><a href="#footer_anchor" class="navigation__link navigation__link_pets">Contacts</a></li>
-                        </ul>
-                    </nav>
+        <header class="header_pets">
+            <div class="header_pets_wrapper">
+                <div class="logo">
+                    <a href="../main/index_main.html" class="logo_title logo_title_pets">Cozy House</a>
+                    <p class="subtitle subtitle_pets">Shelter for pets in Boston</p>
                 </div>
-                </header>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="../main/index_main.html" class="navigation__link navigation__link_pets">About the shelter</a></li>
+                        <li id="select"><a href="#" class="navigation__link navigation__link_pets navigation__link_active_pets">Our pets</a></li>
+                        <li><a href="../main/index_main.html#help_anchor" class="navigation__link navigation__link_pets">Help the shelter</a></li>
+                        <li><a href="#footer_anchor" class="navigation__link navigation__link_pets">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <header class="header_pets_mobile">
+            <div class="logo">
+                <a href="../main/index_main.html" class="logo_title logo_title_pets">Cozy House</a>
+                    <p class="subtitle subtitle_pets">Shelter for pets in Boston</p>
+            </div>
+            <span class="hamburger hamburger_black">
+                <span class="hamburger__line hamburger__line_black"></span>
+            </span>
+        </header>
        
         <section class="pets pets_high">
             <div class="wrapper">
                 <h1 class="pets_heading">Our friends who
                     are looking for a house</h1>
-                <div class="layout-4-column">
+                <div class="layout-4-column layout-4-column_tablet layout-4-column_mobile">
                     <div class="card">
                         <img src="../../assets/images/pets-katrine.png" alt="pets-katrine" class="card__image">
                         <p class="pet_name">Katrine</p>
@@ -46,27 +55,27 @@
                         <p class="pet_name">Woody</p>
                         <button class="card_button"><a href="#" class="button_primary__link">Learn more</a></button>
                     </div>
-                    <div class="card">
+                    <div class="card card__pets_mobile">
                         <img src="../../assets/images/pets-sophia.png" alt="pets-sophia" class="card__image">
                         <p class="pet_name">Sophia</p>
                         <button class="card_button"><a href="#" class="button_primary__link">Learn more</a></button>
                     </div>
-                    <div class="card">
+                    <div class="card card__pets_mobile">
                         <img src="../../assets/images/pets-timmy.png" alt="pets-timmy" class="card__image">
                         <p class="pet_name">Timmy</p>
                         <button class="card_button"><a href="#" class="button_primary__link">Learn more</a></button>
                     </div>
-                    <div class="card">
+                    <div class="card card__pets_mobile">
                         <img src="../../assets/images/pets-charly.png" alt="pets-charly" class="card__image">
                         <p class="pet_name">Charly</p>
                         <button class="card_button"><a href="#" class="button_primary__link">Learn more</a></button>
                     </div>
-                    <div class="card">
+                    <div class="card card_tablet">
                         <img src="../../assets/images/pets-scarlet.png" alt="pets-scarlet" class="card__image">
                         <p class="pet_name">Scarlett</p>
                         <button class="card_button"><a href="#" class="button_primary__link">Learn more</a></button>
                     </div>
-                    <div class="card">
+                    <div class="card card_tablet">
                         <img src="../../assets/images/pets-freddie.png" alt="pets-freddie" class="card__image">
                         <p class="pet_name">Freddie</p>
                         <button class="card_button"><a href="#" class="button_primary__link">Learn more</a></button>
@@ -92,7 +101,7 @@
             </div>
         </section>
 
-        <div class="footer" id="footer_anchor">
+        <div class="footer footer_pets" id="footer_anchor">
             <div class="wrapper">
                 <div class="footer_content">
                     <div class="contacts">
@@ -117,7 +126,8 @@
                             <a href="https://goo.gl/maps/Y4hBc7qWrHQT5xt7A" target="_blank" class="london_loc">18 South Park, London </a>
                         </div>
                     </div>
-                    <img src="../../assets/images/footer-puppy.png" alt="footer_puppy">
+                    <img src="../../assets/images/footer-puppy.png" alt="footer_puppy" class="footer_puppy">
+                    <img src="../../assets/images/footer-puppy-mobile.png" alt="footer_puppy_mobile" class="footer_puppy_mobile">
                 </div>
             </div>
         </div>

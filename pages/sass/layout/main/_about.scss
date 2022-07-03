@@ -55,6 +55,38 @@
         display: none;
     }
     .about_content {
+        width: 300px;
+        padding: 0px;
+    }
+    .about_pets_mobile {
+        display: block;  
+        margin-top: 80px;
+    }
+    .about_text {
+        margin: 0 auto;
+        width: 400px;
+    }
+    .about_heading {
+        padding-top: 42px;
+        width: 350px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .about_subheading {
+        font-size: 15px;
+        text-align: justify;
+    }
+}
+
+/*
+@include media-mobile-s {
+    .about {
+        height: 974px;
+    }
+    .about_pets {
+        display: none;
+    }
+    .about_content {
         width: 270px;
         padding: 0px;
     }
@@ -77,3 +109,4 @@
         text-align: justify;
     }
 }
+*/
