@@ -1225,7 +1225,7 @@ ul {
 @media (min-width: 320px) and (max-width: 576px) {
   .footer {
     width: 100%;
-    height: 900px;
+    height: 885px;
   }
   .footer_content {
     padding-top: 0px;
@@ -1318,11 +1318,11 @@ ul {
 
 @media (min-width: 320px) and (max-width: 576px) {
   .pets_high {
-    height: 1653px;
+    height: 1700px;
     padding-top: 0px;
   }
   .layout-4-column_mobile {
-    width: 400px;
+    width: 375px;
   }
   .card__pets_mobile {
     display: none;

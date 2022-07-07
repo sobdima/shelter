@@ -17,7 +17,8 @@
         "layout/main/_donation.scss",
         "layout/main/_footer.scss",
         "layout/pets/_header_pets.scss",
-        "layout/pets/_pets_high.scss"
+        "layout/pets/_pets_high.scss",
+        "layout/pets/_footer_pets.scss"
     ],
     "names": [],
     "file": "style.css"
