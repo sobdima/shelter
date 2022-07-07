@@ -57,18 +57,19 @@
     .about_content {
         width: 300px;
         padding: 0px;
+        flex-direction: column-reverse;
     }
     .about_pets_mobile {
         display: block;  
-        margin-top: 80px;
+        margin-top: 50px;
     }
     .about_text {
         margin: 0 auto;
-        width: 400px;
+        width: 300px;
     }
     .about_heading {
         padding-top: 42px;
-        width: 350px;
+        width: 300px;
         font-size: 30px;
         text-align: center;
     }

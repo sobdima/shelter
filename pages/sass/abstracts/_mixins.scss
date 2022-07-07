@@ -93,13 +93,14 @@
     letter-spacing: 0.06em;
     color: #F1CDB3;
 }
+// (min-width: 577px) and (max-width: 768px)
 
 @mixin media-tablet {
-    @media (max-width: 768px) { @content; }
+    @media (min-width: 577px) and (max-width: 1024px) { @content; }
 }
 
 @mixin media-mobile {
-    @media (max-width: 576px) { @content; }
+    @media (min-width: 320px) and (max-width: 576px) { @content; }
 }
 
 /*@mixin media-mobile {

@@ -200,14 +200,14 @@ ul {
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .wrapper {
     width: 708px;
     margin: 0 auto;
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .wrapper {
     width: 400px;
     margin: 0 auto;
@@ -267,7 +267,7 @@ ul {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .start_screen_content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -296,7 +296,7 @@ ul {
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .start_screen_container {
     height: 823px;
   }
@@ -344,7 +344,7 @@ ul {
         -ms-flex-align: center;
             align-items: center;
     padding-top: 0px;
-    margin-top: 60px;
+    margin-top: 0px;
   }
 }
 
@@ -458,13 +458,13 @@ ul {
   padding-top: 10px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .header_main {
     padding-top: 30px;
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .header_main {
     display: none;
   }
@@ -532,7 +532,7 @@ ul {
   color: #545454;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .about {
     height: 1048px;
   }
@@ -553,7 +553,7 @@ ul {
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .about {
     height: 974px;
   }
@@ -563,18 +563,22 @@ ul {
   .about_content {
     width: 300px;
     padding: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .about_pets_mobile {
     display: block;
-    margin-top: 80px;
+    margin-top: 50px;
   }
   .about_text {
     margin: 0 auto;
-    width: 400px;
+    width: 300px;
   }
   .about_heading {
     padding-top: 42px;
-    width: 350px;
+    width: 300px;
     font-size: 30px;
     text-align: center;
   }
@@ -740,7 +744,7 @@ ul {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .pets_high {
     height: 1853px;
   }
@@ -763,7 +767,7 @@ ul {
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .pets {
     height: 806px;
   }
@@ -919,7 +923,11 @@ ul {
   margin-top: 30px;
 }
 
-@media (max-width: 768px) {
+.icon_text_low {
+  margin-top: 37px;
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
   .help {
     height: 779px;
   }
@@ -942,9 +950,9 @@ ul {
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .help {
-    height: 890px;
+    height: 850px;
   }
   .help_heading {
     font-size: 30px;
@@ -962,16 +970,17 @@ ul {
             align-items: center;
   }
   .list__item {
+    width: 150px;
     margin-bottom: 30px;
-  }
-  .list__item:nth-child(odd) {
-    margin-right: 30px;
   }
   .list__item_margin {
     margin-right: 0px;
   }
   .list__item_down {
     margin-top: 0px;
+  }
+  .list__item_mobile {
+    margin-right: 30px;
   }
   .icon_text {
     margin-top: 20px;
@@ -1035,7 +1044,7 @@ ul {
   width: 380px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .donation {
     padding-top: 0px;
     height: 783px;
@@ -1061,7 +1070,7 @@ ul {
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .donation {
     width: 100%;
     height: 605px;
@@ -1070,22 +1079,31 @@ ul {
   }
   .donation_main {
     width: 400px;
-    height: 565px;
+    height: 540px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .donation_main .donation_dog_mobile {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     padding-top: 42px;
+    width: 300px;
   }
   .donation_main .donation_dog {
     display: none;
   }
   .donation_content {
     width: 400px;
+    margin-left: 0;
   }
   .donation_heading {
-    padding-top: 42px;
+    padding-top: 0px;
     font-size: 30px;
     width: 270px;
     margin: 0 auto;
@@ -1178,9 +1196,9 @@ ul {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .footer {
-    width: 768px;
+    width: 100%;
     height: 640px;
   }
   .footer_content {
@@ -1203,10 +1221,18 @@ ul {
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .footer {
     width: 100%;
     height: 864px;
+  }
+  .footer_content {
+    padding-top: 0px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .contacts, .locations {
     margin: 0 0 40px 0;
@@ -1263,13 +1289,13 @@ ul {
   color: #292929;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .header_pets_wrapper {
     width: 708px;
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .header_pets {
     display: none;
   }
@@ -1289,7 +1315,7 @@ ul {
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .pets_high {
     height: 1653px;
     padding-top: 0px;

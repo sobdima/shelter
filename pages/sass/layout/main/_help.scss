@@ -42,6 +42,10 @@
     margin-top: 30px;
 }
 
+.icon_text_low {
+    margin-top: 37px;
+}
+
 @include media-tablet {
     .help {
         height: 779px;
@@ -67,7 +71,7 @@
 
 @include media-mobile {
     .help {
-        height: 890px;
+        height: 850px;
     }
     .help_heading {
         font-size: 30px;
@@ -82,16 +86,17 @@
         
     }
     .list__item {
+        width: 150px;
         margin-bottom: 30px;
-    }
-    .list__item:nth-child(odd) {
-        margin-right: 30px;
     }
     .list__item_margin {
         margin-right: 0px;
     }
     .list__item_down {
         margin-top: 0px;
+    }
+    .list__item_mobile {
+        margin-right: 30px;
     }
     .icon_text {
         margin-top: 20px;

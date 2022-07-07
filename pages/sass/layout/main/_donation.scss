@@ -77,10 +77,13 @@
     }
     .donation_main {
         width: 400px;
-        height: 565px;
+        height: 540px;
+        flex-direction: column-reverse;
+        align-items: center;
         .donation_dog_mobile {
             display: inline-flex;
             padding-top: 42px;
+            width: 300px;
             //margin-bottom: 42px;
         }
         .donation_dog {
@@ -89,9 +92,10 @@
     }
     .donation_content {
         width: 400px;
+        margin-left: 0;
     }
     .donation_heading {
-        padding-top: 42px;
+        padding-top: 0px;
         font-size: 30px;
         width: 270px;
         margin: 0 auto;
