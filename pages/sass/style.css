@@ -209,7 +209,7 @@ ul {
 
 @media (min-width: 320px) and (max-width: 576px) {
   .wrapper {
-    width: 400px;
+    width: 375px;
     margin: 0 auto;
   }
 }
@@ -469,6 +469,7 @@ ul {
     display: none;
   }
   .header_main_mobile {
+    width: 375px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -773,7 +774,7 @@ ul {
   }
   .pets_heading {
     font-size: 30px;
-    width: 400px;
+    width: 375px;
     padding-top: 42px;
   }
   .slider {
@@ -1078,7 +1079,7 @@ ul {
     margin: 0 auto;
   }
   .donation_main {
-    width: 400px;
+    width: 375px;
     height: 540px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1099,7 +1100,7 @@ ul {
     display: none;
   }
   .donation_content {
-    width: 400px;
+    width: 375px;
     margin-left: 0;
   }
   .donation_heading {
@@ -1110,7 +1111,7 @@ ul {
     text-align: center;
   }
   .donation_subheading {
-    width: 400px;
+    width: 370px;
     text-align: center;
     padding-top: 20px;
     margin-bottom: 20px;
